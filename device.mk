@@ -136,6 +136,9 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
+    
+# FOD
+$(call soong_config_set, surfaceflinger, udfps_lib, "//hardware/oplus:libudfps_extension.oplus")
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
@@ -147,6 +150,8 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.location.gps.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.location.gps.xml
 
 # Health
+$(call soong_config_set, oplus_health, charging_control_path, "/sys/class/oplus_chg/battery/mmi_charging_enable")
+
 PRODUCT_PACKAGES += \
     android.hardware.health-service.mediatek \
     android.hardware.health-service.mediatek-recovery
@@ -257,6 +262,8 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 # Power
+$(call soong_config_set, power_libperfmgr, mode_extension_lib, "//hardware/oplus:libperfmgr-ext-oplus")
+
 PRODUCT_PACKAGES += \
     android.hardware.power-service.lineage-libperfmgr \
     vendor.mediatek.hardware.mtkpower@1.2-service.stub
