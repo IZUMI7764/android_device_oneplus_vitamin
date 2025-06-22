@@ -262,7 +262,6 @@ PRODUCT_PACKAGES += \
     fastbootd
 
 # Power
-$(call soong_config_set, power_libperfmgr, mode_extension_lib, "//hardware/oplus:libperfmgr-ext-oplus")
 
 PRODUCT_PACKAGES += \
     android.hardware.power-service.lineage-libperfmgr \
