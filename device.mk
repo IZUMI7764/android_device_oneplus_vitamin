@@ -245,8 +245,7 @@ PRODUCT_PACKAGES += \
     OPlusNfcResTarget \
     OPlusSettingsProviderResTarget \
     OPlusSettingsResTarget \
-    OPlusSystemUIResTarget \
-    OPlusTelephonyResTarget
+    OPlusSystemUIResTarget
 
 PRODUCT_PACKAGES += \
     ApertureResTarget \
