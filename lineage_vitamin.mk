@@ -9,6 +9,9 @@ $(call inherit-product, device/oneplus/vitamin/device.mk)
 # Inherit from the LineageOS configuration.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+#Inherti ViperFx
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
+
 PRODUCT_BRAND := OnePlus
 PRODUCT_DEVICE := vitamin
 PRODUCT_MANUFACTURER := OnePlus
