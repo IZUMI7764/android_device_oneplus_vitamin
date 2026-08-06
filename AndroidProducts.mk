@@ -4,4 +4,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/shinkai_vitamin.mk
+    $(LOCAL_DIR)/halcyon_vitamin.mk

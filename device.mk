@@ -9,9 +9,6 @@ DEVICE_PATH := device/oneplus/vitamin
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Dolby Atmos
-$(call inherit-product, hardware/dolby/dolby.mk)
-
 # A/B
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_vendor_ramdisk.mk)
 
