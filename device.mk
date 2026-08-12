@@ -47,6 +47,11 @@ PRODUCT_PACKAGES += \
     KeyHandler \
     tri-state-key-calibrate
 
+# Axion Kernel Manager
+PRODUCT_COPY_FILES += \
+    $(DEVICE_PATH)/configs/kernel/ax_kernel_manager.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/ax_kernel_manager.xml \
+    $(DEVICE_PATH)/init/ax_init_kernel.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/ax_init_kernel.rc
+
 # API
 BOARD_SHIPPING_API_LEVEL := 31
 PRODUCT_SHIPPING_API_LEVEL := 33

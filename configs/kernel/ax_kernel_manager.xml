@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernel-manager>
+
+    <!-- Cortex-A510 -->
+    <cpu
+        id="little"
+        group="Efficiency CPU"
+        minId="axion_min_freq"
+        maxId="axion_max_freq"
+        governorId="little_cpu_governor"
+        minNode="/sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq"
+        maxNode="/sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq"
+        availablePath="/sys/devices/system/cpu/cpufreq/policy0/scaling_available_frequencies"
+        governorNode="/sys/devices/system/cpu/cpufreq/policy0/scaling_governor"
+        governorAvailablePath="/sys/devices/system/cpu/cpufreq/policy0/scaling_available_governors"/>
+
+    <!-- Cortex-A710 -->
+    <cpu
+        id="mid"
+        group="Performance CPU"
+        minId="axion_min_freq_big"
+        maxId="axion_max_freq_big"
+        governorId="mid_cpu_governor"
+        minNode="/sys/devices/system/cpu/cpufreq/policy4/scaling_min_freq"
+        maxNode="/sys/devices/system/cpu/cpufreq/policy4/scaling_max_freq"
+        availablePath="/sys/devices/system/cpu/cpufreq/policy4/scaling_available_frequencies"
+        governorNode="/sys/devices/system/cpu/cpufreq/policy4/scaling_governor"
+        governorAvailablePath="/sys/devices/system/cpu/cpufreq/policy4/scaling_available_governors"/>
+
+    <!-- Cortex-X2 -->
+    <cpu
+        id="big"
+        group="Prime CPU"
+        minId="axion_min_freq_prime"
+        maxId="axion_max_freq_prime"
+        governorId="big_cpu_governor"
+        minNode="/sys/devices/system/cpu/cpufreq/policy7/scaling_min_freq"
+        maxNode="/sys/devices/system/cpu/cpufreq/policy7/scaling_max_freq"
+        availablePath="/sys/devices/system/cpu/cpufreq/policy7/scaling_available_frequencies"
+        governorNode="/sys/devices/system/cpu/cpufreq/policy7/scaling_governor"
+        governorAvailablePath="/sys/devices/system/cpu/cpufreq/policy7/scaling_available_governors"/>
+
+    <!-- Mali-G710 MC10 -->
+    <gpu
+        node="/sys/devices/platform/soc/13000000.mali/devfreq/13000000.mali"
+        currentNode="/sys/devices/platform/soc/13000000.mali/devfreq/13000000.mali/cur_freq"
+        usageNode="/sys/kernel/ged/hal/gpu_utilization"
+        frequencyMultiplier="1"
+        values="214000000,226000000,239000000,252000000,265000000,277000000,290000000,303000000,316000000,332000000,349000000,366000000,383000000,400000000,417000000,434000000,451000000,467000000,484000000,501000000,518000000,535000000,552000000,569000000,586000000,612000000,638000000,665000000,691000000,717000000,744000000,770000000,797000000,803000000,809000000,816000000,822000000,828000000,835000000,841000000,848000000"/>
+
+</kernel-manager>

@@ -19,6 +19,18 @@ PRODUCT_MODEL := PHP110
 PRODUCT_NAME := lineage_vitamin
 PERF_ANIM_OVERRIDE := true
 
+#AxionFlags
+AXION_CAMERA_REAR_INFO := 50,8,2
+AXION_CAMERA_FRONT_INFO := 16
+
+# Maintainer name
+AXION_MAINTAINER := ShoreKeeper_BlackShores
+
+# Processor name
+AXION_PROCESSOR := Dimesity_9000
+
+TARGET_NEEDS_VULKAN_MEDIA_FIX := true
+
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
