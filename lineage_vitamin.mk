@@ -19,39 +19,6 @@ PRODUCT_MODEL := PHP110
 PRODUCT_NAME := lineage_vitamin
 PERF_ANIM_OVERRIDE := true
 
-#LunarisAops
-LUNARIS_BUILD_TYPE := UNOFFICIAL
-TARGET_OPTIMIZED_DEXOPT := true
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_DISABLE_MATLOG:= true
-SURFACE_FLINGER_BOOST := true
-USE_REALITY_ENGINE := false
-WITH_GMS := true
-TARGET_CUSTOM_UDFPS := true
-
-# Build Google live wallpapers  (Only full gms)
-TARGET_INCLUDE_LIVE_WALLPAPERS := true
-
-TARGET_SUPPORTS_GOOGLE_TELEPHONY := true
-
-# Set Boot Animation Resolution
-TARGET_BOOT_ANIMATION_RES := 1080
-
-# Build Google Files
-TARGET_SUPPORTS_GOOGLE_FILES := true
-
-# Build Google Recoder
-TARGET_SUPPORTS_GOOGLE_RECORDER := true
-
-# Build Photos app (Default true in Full GMS)
-TARGET_INCLUDE_PHOTOS := true
-
-# Build Pixel Weather
-TARGET_INCLUDE_WEATHER := true
-
-# Ship BCR
-WITH_BCR := true
-
 PRODUCT_GMS_CLIENTID_BASE := android-oneplus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
