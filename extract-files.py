@@ -92,6 +92,10 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libutils-v32.so'),
     ('vendor/oneplus/vitamin/proprietary/odm/bin/touchDaemon', 'odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service_uff', 'vendor/lib64/hw/audio.primary.mediatek.so', 'vendor/lib64/librt_extamp_intf.so', 'vendor/lib64/hw/mt6983/vendor.mediatek.hardware.pq@2.15-impl.so',): blob_fixup()
         .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
+    'vendor/etc/wifi/p2p_supplicant_overlay.conf': blob_fixup()
+        .add_line_if_missing('p2p_go_vht=1'),
+    'vendor/etc/wifi/wpa_supplicant.conf': blob_fixup()
+        .add_line_if_missing('rsn_overriding=1'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
