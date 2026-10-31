@@ -32,5 +32,5 @@ ro.separate.soft=22823
 persist.vendor.sys.pq.disp.ccorr.silky.brightness=1
 
 # Sensor
-persist.sys.enable_mtk_scp_dump=1
+persist.sys.enable_mtk_scp_dump=0
 ro.vendor.oplus.sensor.report_brightness=true
