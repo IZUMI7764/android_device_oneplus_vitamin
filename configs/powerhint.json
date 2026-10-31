@@ -526,6 +526,36 @@
           "Node": "RestrictedCpuset",
           "Duration": 0,
           "Value": "0-3"
+        },
+        {
+          "PowerHint": "GAME",
+          "Node": "MemFreq",
+          "Duration": 0,
+          "Value": "5500000000"
+        },
+        {
+          "PowerHint": "CAMERA_LAUNCH",
+          "Node": "CPUSuperClusterMinFreq",
+          "Duration": 1000,
+          "Value": "1400000"
+        },
+        {
+          "PowerHint": "CAMERA_LAUNCH",
+          "Node": "MemFreq",
+          "Duration": 1000,
+          "Value": "5500000000"
+        },
+        {
+          "PowerHint": "CAMERA_SHOT",
+          "Node": "CPUSuperClusterMinFreq",
+          "Duration": 1000,
+          "Value": "1400000"
+        },
+        {
+          "PowerHint": "CAMERA_SHOT",
+          "Node": "MemFreq",
+          "Duration": 1000,
+          "Value": "5500000000"
         }
       ]
   }
