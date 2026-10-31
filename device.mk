@@ -323,6 +323,12 @@ PRODUCT_COPY_FILES += \
 # Setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-8192-dalvik-heap.mk)
 
+PRODUCT_PRODUCT_PROPERTIES += \
+    dalvik.vm.dex2oat-threads=6 \
+    dalvik.vm.dex2oat-cpu-set=0,1,2,3,4,5,6 \
+    dalvik.vm.background-dex2oat-threads=4 \
+    dalvik.vm.background-dex2oat-cpu-set=0,1,2,3
+
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(DEVICE_PATH) \
