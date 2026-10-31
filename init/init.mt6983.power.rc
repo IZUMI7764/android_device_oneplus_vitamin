@@ -152,6 +152,14 @@ on property:ro.boot.ddr_size=12288
     setprop dalvik.vm.heapminfree 8m
     setprop dalvik.vm.heapmaxfree 56m
 
+on property:ro.boot.ddr_size=16384
+    setprop dalvik.vm.heapstartsize 24m
+    setprop dalvik.vm.heapgrowthlimit 512m
+    setprop dalvik.vm.heapsize 512m
+    setprop dalvik.vm.heaptargetutilization 0.42
+    setprop dalvik.vm.heapminfree 8m
+    setprop dalvik.vm.heapmaxfree 56m
+
 service vendor.gralloc-4-0 /vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
     class hal animation
     interface android.hardware.graphics.allocator@4.0::IAllocator default
