@@ -416,31 +416,31 @@
         {
           "PowerHint": "LAUNCH",
           "Node": "CPUUltraClusterMinFreq",
-          "Duration": 1500,
+          "Duration": 1000,
           "Value": "9999999"
         },
         {
           "PowerHint": "LAUNCH",
           "Node": "CPUSuperClusterMinFreq",
-          "Duration": 1500,
+          "Duration": 1000,
           "Value": "9999999"
         },
         {
           "PowerHint": "LAUNCH",
           "Node": "CPUEfficiencyClusterMinFreq",
-          "Duration": 1500,
+          "Duration": 1000,
           "Value": "9999999"
         },
         {
           "PowerHint": "LAUNCH",
           "Node": "MemFreq",
-          "Duration": 1500,
+          "Duration": 1000,
           "Value": "9999999999"
         },
         {
           "PowerHint": "LAUNCH",
           "Node": "UclampTAMin",
-          "Duration": 1500,
+          "Duration": 1000,
           "Value": "100"
         },
         {
